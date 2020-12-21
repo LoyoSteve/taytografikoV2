@@ -1,0 +1,979 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+@font-face {
+    font-family: "LeagueSpartan-Bold";
+    src: url(../font/LeagueSpartan-Bold.otf);
+}
+
+body {
+    display: none;
+}
+
+p {
+    transition: 1s ease;
+}
+
+:root {
+    --fontLeague: "LeagueSpartan-Bold";
+    --colorFontTitulo: #FFDE59;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*titulos*/
+
+.titulo, .parrafos {
+    position: relative;
+    color: var(--colorFontTitulo);
+    font-family: var(--fontLeague);
+    font-size: 50px;
+}
+
+/*parrafos*/
+
+.parrafos {
+    color: black;
+    font-size: 100%;
+    text-align: justify;
+}
+
+/*articulos*/
+
+article {
+    position: relative;
+    height: 100vh;
+    padding: 5%;
+}
+
+/*panel global*/
+
+.div-global-panel {
+    display: flex;
+}
+
+/*panel topics*/
+
+.topics-panel {
+    position: relative;
+    max-width: 15%;
+    background: #5686AA;
+    height: 100vh;
+    padding: 1%;
+}
+
+.topics-panel a {
+    text-align: right;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: var(--fontLeague);
+    padding: .5em;
+}
+
+.topics-panel a:hover {
+    background: #497291;
+}
+
+/*panel content*/
+
+.content-panel {
+    position: relative;
+    background: whitesmoke;
+    height: 100vh;
+    overflow: scroll;
+}
+
+/*articulo 1 ------------------------------------------------------------Inicio*/
+
+/*imagenes*/
+
+.art1-tayto-icon {
+    position: absolute;
+    width: 8%;
+}
+
+.art1-tayto-icon:nth-child(1) {
+    top: 5%;
+    left: 50%;
+    transform: rotateZ(-20deg);
+}
+
+.art1-tayto-icon:nth-child(2) {
+    top: 70%;
+    left: 65%;
+    transform: rotateZ(50deg);
+}
+
+.art1-tayto-icon:nth-child(3) {
+    top: 45%;
+    z-index: 0;
+    transform: rotateZ(-70deg);
+}
+
+.art1-tayto-arbol {
+    position: absolute;
+    width: 35%;
+    bottom: 0;
+    right: 0;
+    transform: rotateY(180deg);
+    z-index: 20;
+}
+
+/*----------------*/
+
+.art1-home-page, .art1-album-fotos, .art1-nuestro-team {
+    width: 20%;
+    position: absolute;
+    top: 60%;
+}
+
+.art1-home-page {
+    left: 5%;
+    transition: 0.5s;
+}
+
+.art1-color-homepage {
+    transition: 0.5s;
+    fill: rgb(98, 221, 139);
+}
+
+.art1-mont-homepage {
+    fill: rgb(236, 233, 26);
+}
+
+.art1-stroke-homepage {
+    stroke: rgb(17, 0, 255);
+}
+
+.art1-home-page:hover {
+    transition: 0.5s;
+    transform: scale(1.5);
+    z-index: 100;
+}
+
+.art1-home-page:hover .art1-color-homepage {
+    transition: 0.5s;
+    fill: rgb(221, 101, 101);
+}
+
+.art1-home-page:hover .art1-mont-homepage {
+    transition: 0.5s;
+    fill: rgb(255, 255, 255);
+}
+
+.art1-home-page:hover .art1-stroke-homepage {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: art1-stroke-mov 5s linear infinite;
+}
+
+@keyframes art1-stroke-mov {
+    to {
+        stroke-dashoffset: -1000;
+    }
+}
+
+/*------------------*/
+
+.art1-album-fotos {
+    left: 30%;
+}
+
+/*-------------------------------*/
+
+.art1-nuestro-team {
+    left: 54%;
+}
+
+/*contenido*/
+
+.art1 p {
+    position: relative;
+    z-index: 1000;
+    width: 70%;
+}
+
+.art1-titulos {
+    position: absolute;
+    width: 70%;
+    top: 90%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Articulo 2 -------------------------------------------------------------Admin de servicios*/
+
+.art2 {
+    background: #c75b5b;
+}
+
+.art2 h1 {
+    padding: 1%;
+    background: black;
+}
+
+.art2 p {
+    padding: 1%;
+    width: 40%;
+}
+
+.art2::before {
+    position: absolute;
+    content: "";
+    background: #FFE161;
+    width: 550px;
+    height: 550px;
+    top: -18%;
+    left: -5%;
+    border-radius: 50%;
+}
+
+/*iconos*/
+
+.art2-iconos {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*caracteristicas globales*/
+
+.art2-iconos-redesSociales {
+    position: relative;
+    width: 10%;
+}
+
+.art2-iconos-redesSociales:before, .art2-iconos-correo:before, .art2-iconos-anuncios:before, .art2-iconos-capacitaciones:before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -20%;
+    left: -80%;
+    background: whitesmoke;
+    border-radius: 50%;
+    transition: 0.5s;
+    opacity: 0%;
+}
+
+.art2-info-rs {
+    position: absolute;
+    width: 900%;
+    top: 80%;
+    left: -80%;
+    background: whitesmoke;
+    padding: 50%;
+    border-radius: 10px;
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+.art2-info-rs p, .art2-info-correo p, .art2-info-anuncios p, .art2-info-cap p {
+    width: 100%;
+}
+
+.art2-iconos-rs-mano {
+    position: absolute;
+    width: 70%;
+    top: 70%;
+    left: 55%;
+    z-index: 100;
+}
+
+.art2-iconos-rs-heart {
+    position: absolute;
+    width: 60%;
+    top: 30%;
+    left: 20%;
+}
+
+.art2-iconos-rs-phone {
+    position: relative;
+    width: 100%;
+}
+
+.art2-iconos-redesSociales:hover .art2-info-rs {
+    top: 100%;
+    opacity: 100%;
+    transition: 1s;
+}
+
+.art2-iconos-redesSociales:hover::before {
+    opacity: 100%;
+    transition: 1s;
+}
+
+.art2-iconos-redesSociales:hover .art2-iconos-rs-mano {
+    animation: art2-iconos-rs-mano-movimiento 2s ease infinite;
+}
+
+.art2-iconos-redesSociales:hover .art2-iconos-rs-heart {
+    animation: art2-iconos-rs-heart-click 2s ease infinite;
+}
+
+@keyframes art2-iconos-rs-mano-movimiento {
+    40% {
+        top: 40%;
+        left: 45%;
+    }
+    50% {
+        top: 40%;
+        left: 45%;
+    }
+    50% {
+        transform: scale(1);
+    }
+    52% {
+        transform: scale(0.9);
+    }
+    54% {
+        transform: scale(0.9);
+    }
+    56% {
+        transform: scale(1);
+    }
+    60% {
+        top: 40%;
+        left: 45%;
+    }
+    100% {
+        top: 70%;
+        left: 55%;
+    }
+}
+
+@keyframes art2-iconos-rs-heart-click {
+    50% {
+        transform: scale(1);
+    }
+    52% {
+        transform: scale(0.9);
+    }
+    54% {
+        transform: scale(0.9);
+    }
+    56% {
+        transform: scale(1);
+    }
+}
+
+/*correo*/
+
+.art2-iconos-correo {
+    position: relative;
+    width: 20%;
+}
+
+.art2-iconos-correo:before {
+    left: -18%;
+    top: -35%;
+}
+
+.art2-iconos-correo img {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.art2-info-correo {
+    position: absolute;
+    width: 450%;
+    top: 80%;
+    left: -128%;
+    padding: 20%;
+    background: whitesmoke;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.art2-iconos-correo:hover::before {
+    opacity: 100%;
+}
+
+.art2-iconos-correo:hover .art2-info-correo {
+    top: 120%;
+    opacity: 100%;
+}
+
+/*ads*/
+
+.art2-iconos-anuncios {
+    position: relative;
+    width: 20%;
+}
+
+.art2-iconos-anuncios:before {
+    left: -18%;
+    top: -16%;
+}
+
+.art2-iconos-anuncios img {
+    position: relative;
+    width: 100%;
+}
+
+.art2-info-anuncios {
+    position: absolute;
+    width: 450%;
+    top: 80%;
+    left: -200%;
+    padding: 20%;
+    background: whitesmoke;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.art2-iconos-anuncios:hover::before {
+    opacity: 100%;
+}
+
+.art2-iconos-anuncios:hover .art2-info-anuncios {
+    top: 100%;
+    opacity: 100%;
+}
+
+/*Capacitaciones*/
+
+.art2-iconos-capacitaciones {
+    position: relative;
+    width: 20%;
+}
+
+.art2-iconos-capacitaciones:before {
+    top: -16%;
+    left: -16%;
+}
+
+.art2-iconos-capacitaciones img {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.art2-info-cap {
+    position: absolute;
+    width: 450%;
+    top: 80%;
+    left: -330%;
+    padding: 20%;
+    background: whitesmoke;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.art2-iconos-capacitaciones:hover::before {
+    opacity: 100%;
+}
+
+.art2-iconos-capacitaciones:hover .art2-info-cap {
+    top: 100%;
+    opacity: 100%;
+}
+
+/*articulo 3 Papeleria---------------------------------------------------------- Papeleria*/
+
+.art3 {
+    background: url(../img/qwe.jpg);
+    background-size: cover;
+}
+
+.art3-title:nth-child(2) {
+    color: whitesmoke;
+    width: 50%;
+}
+
+.art3-galeria {
+    position: absolute;
+    padding: 2%;
+    top: 5%;
+    left: 50%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.art3-galeria div {
+    margin: 1%;
+    position: relative;
+    width: 45%;
+    overflow: hidden;
+}
+
+.art3-galeria img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.art3-gal-img p, .art3-gal-imgl p {
+    position: absolute;
+    bottom: 0%;
+    padding: 8%;
+    width: 90%;
+    height: 80%;
+    color: white;
+    font-style: italic;
+    background: black;
+}
+
+.art3-gal-img:nth-child(1) p, .art3-gal-img:nth-child(3) p, .art3-gal-img:nth-child(5) p {
+    right: -100%;
+    text-align: right;
+    transition: 1s ease;
+}
+
+.art3-gal-imgl:nth-child(2) p, .art3-gal-imgl:nth-child(4) p, .art3-gal-imgl:nth-child(6) p {
+    left: -100%;
+    transition: 1s ease;
+}
+
+.art3-gal-img:hover p {
+    right: 0;
+    transition: 1s;
+}
+
+.art3-gal-imgl:hover p {
+    left: 0;
+    transition: 1s;
+}
+
+/*articulo 4----------------------------------------*/
+
+.art4 {
+    padding: 0;
+}
+
+/*decoraciones*/
+
+.art4-circulo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.art4-circulo circle {
+    cx: 110%;
+    cy: -20%;
+    r: 60%;
+}
+
+/*contenido*/
+
+.art4-info {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 36%;
+}
+
+/*esta tarjeta es para darle perspectiva a todas las imagenes*/
+
+.tarjeta-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 800;
+    perspective: 800;
+    z-index: 10;
+}
+
+/*fotos personales*/
+
+.art4-foto-fotosp, .art4-foto-fotosp2, .art4-foto-fotosp3 {
+    position: absolute;
+    width: 25%;
+    padding: 2%;
+    padding-bottom: 4%;
+    background: whitesmoke;
+    -webkit-box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+}
+
+.art4-foto-fotosp {
+    top: 10%;
+    left: 15%;
+    transform: rotateZ(-3deg);
+    z-index: 10;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+}
+
+.art4-foto-fotosp::after {
+    content: "Fotos Personales";
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    color: white;
+    background: black;
+    padding: 4%;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+/*backface*/
+
+.adelante, .atras {
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.atras {
+    position: absolute;
+    transform: rotateY(180deg);
+    margin: 7%;
+    padding: 7%;
+    border: solid black 1px;
+    height: 82%;
+    background: whitesmoke;
+}
+
+.atras > p, .atras > h2 {
+    font-style: italic;
+    text-align: center;
+}
+
+.art4-foto-fotosp:hover {
+    transition: 1s ease;
+    transform: rotateY(180deg);
+}
+
+.art4-foto-fotosp2 {
+    top: 0%;
+    transform: rotateZ(-13deg);
+}
+
+.art4-foto-fotosp3 {
+    top: 0%;
+    left: 30%;
+    transform: rotateZ(10deg);
+}
+
+/*anucios*/
+
+.art4-foto-ads {
+    position: absolute;
+    width: 22%;
+    top: 55%;
+    left: 5%;
+    padding: 2%;
+    background: #865f3c;
+    transform: rotateZ(2deg);
+    -webkit-box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+}
+
+.art4-foto-ads::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 70%;
+    width: 50%;
+    height: 40%;
+    border-radius: 50%;
+    background: #6d492a;
+}
+
+.art4-foto-ads>p {
+    position: absolute;
+    bottom: 15%;
+    font-style: italic;
+    left: 33%;
+    color: white;
+    padding: 4%;
+    background: black;
+}
+
+.art4-foto-ads img {
+    padding: 6%;
+    padding-bottom: 25%;
+    background: whitesmoke;
+}
+
+.art4-foto-ads:hover {
+    transition: 1s ease;
+    transform: rotateY(180deg);
+}
+
+/*logos*/
+
+.art4-foto-logos1, .art4-foto-logos2, .art4-foto-logos3 {
+    padding: 1%;
+    background: whitesmoke;
+    -webkit-box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+}
+
+.art4-foto-logos1 {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    width: 20%;
+    transform: rotateZ(-15deg);
+    z-index: 10;
+}
+
+.art4-foto-logos2 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 20%;
+    transform: rotateZ(5deg);
+    z-index: 20;
+    background: #74706e;
+    padding-bottom: 3%;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+}
+
+.art4-foto-logos2::after {
+    content: "Logos";
+    position: absolute;
+    top: 80%;
+    left: 36%;
+    color: white;
+    background: black;
+    padding: 3%;
+    font-style: italic;
+}
+
+.art4-foto-logos2:hover {
+    transition: 1s ease;
+    transform: rotateY(180deg);
+}
+
+.art4-foto-logos3 {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    width: 25%;
+    transform: rotateZ(-6deg);
+}
+
+.art4-cintaAdesiva {
+    position: absolute;
+    fill: rgba(204, 208, 230, 0.61);
+    /*stroke:black;*/
+    width: 10%;
+    top: 49%;
+    left: 37%;
+    transform: rotateZ(-20deg);
+    z-index: 30;
+}
+
+.art4-cintaAdesiva:nth-child(2) {
+    top: 100%;
+    left: 27%;
+    fill: rgba(220, 174, 224, 0.767);
+    transform: rotateZ(30deg);
+}
+
+.art4-cintaAdesiva:nth-child(3) {
+    top: 29%;
+    left: 62%;
+    fill: rgba(219, 223, 162, 0.767);
+    transform: rotateZ(30deg);
+}
+
+.art4-cintaAdesiva:nth-child(4) {
+    top: 77%;
+    left: 53%;
+    fill: rgba(195, 196, 236, 0.767);
+    transform: rotateZ(-50deg);
+}
+
+/*studio*/
+
+.art4-foto-studio, .art4-foto-studio2 {
+    position: absolute;
+    padding: 2%;
+    background: whitesmoke;
+    -webkit-box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
+}
+
+.art4-foto-studio {
+    top: 35%;
+    left: 75%;
+    width: 25%;
+    transform: rotateZ(10deg);
+    z-index: 10;
+}
+
+.art4-foto-studio2 {
+    top: 65%;
+    left: 65%;
+    width: 25%;
+    transform: rotateZ(-10deg);
+    z-index: 10;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+}
+
+.art4-foto-studio2::after {
+    content: "Estudio";
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    padding: 3%;
+    color: white;
+    background: black;
+    font-style: italic;
+}
+
+.art4-foto-studio2:hover {
+    transition: 1s ease;
+    transform: rotateY(180deg);
+}
+
+/*este es para qwue las imagenes se ajusten al tamaño del div*/
+
+.art4-foto-fotosp img, .art4-foto-fotosp2 img, .art4-foto-fotosp3 img, .art4-foto-ads img, .art4-foto-logos1 img, .art4-foto-logos2 img, .art4-foto-logos3 img, .art4-foto-studio img, .art4-foto-studio2 img {
+    width: 100%;
+    background: whitesmoke;
+}
+
+/*Articulo 5 videos---------------------------------------------------------------------------*/
+
+.art5 {
+    background: black;
+}
+
+.art5-info {
+    position: absolute;
+    width: 35%;
+    z-index: 10;
+}
+
+.art5-info p {
+    color: whitesmoke;
+}
+
+.art5-play-container {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 65%;
+    height: 55%;
+}
+/*cinta de videos*/
+.art5-videos{
+    position: absolute;
+    top: 64%;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+}
+.art5-videos-miniatura{
+    position: relative;
+    width: 30%;
+    height: 90%;
+    color: white;
+    background: pink;
+    overflow: hidden;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.art5-videos-miniatura img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.art5-videos-miniatura-info{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 8%;
+    background:rgba(0, 0, 0, 0.795);
+}
+.art5-videos-miniatura:hover{
+    transform:scale(1.2);
+    transition: 0.7s;
+}
+.art5-videos-miniatura:hover .art5-videos-miniatura-info{
+    top: 0;
+    transition: 1s;
+}
+/*video play*/
+.art5-play-container-marco {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    -webkit-box-shadow: inset 0px 0px 30px 50px rgba(0, 0, 0, 1);
+    -moz-box-shadow: inset 0px 0px 30px 50px rgba(0, 0, 0, 1);
+    box-shadow: inset 0px 0px 30px 50px rgba(0, 0, 0, 1);
+}
+
+.art5-play-container-video {
+    width: 100%;
+}
+
+.art5-play-container-video:focus {
+    outline: none;
+}
+
+/*Redes sociales*/
+
+.redes {
+    position: fixed;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.redes img {
+    width: 60px;
+    padding: 5px;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.redes a:nth-child(1) img {
+    background: #5671d6;
+}
+
+.redes a:nth-child(2) img {
+    background: rgba(254, 199, 97, 1);
+    background: -moz-linear-gradient(45deg, rgba(254, 199, 97, 1) 0%, rgba(224, 52, 106, 1) 52%, rgba(160, 54, 186, 1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(254, 199, 97, 1)), color-stop(52%, rgba(224, 52, 106, 1)), color-stop(100%, rgba(160, 54, 186, 1)));
+    background: -webkit-linear-gradient(45deg, rgba(254, 199, 97, 1) 0%, rgba(224, 52, 106, 1) 52%, rgba(160, 54, 186, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(254, 199, 97, 1) 0%, rgba(224, 52, 106, 1) 52%, rgba(160, 54, 186, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(254, 199, 97, 1) 0%, rgba(224, 52, 106, 1) 52%, rgba(160, 54, 186, 1) 100%);
+    background: linear-gradient(45deg, rgba(254, 199, 97, 1) 0%, rgba(224, 52, 106, 1) 52%, rgba(160, 54, 186, 1) 100%);
+}
+
+.redes a:nth-child(3) img {
+    background: #33b449;
+}
