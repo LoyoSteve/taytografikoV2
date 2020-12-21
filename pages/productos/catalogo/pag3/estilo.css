@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400&display=swap');
+:root {
+    --colorBase: #3f61a8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+/*Encabezado*/
+
+.contentheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: black;
+    height: 100px;
+}
+
+.contentheader img {
+    width: 150px;
+}
+
+.navegador {
+    max-width: 400px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: whitesmoke;
+}
+
+/*presentacion*/
+
+.presentacion {
+    background: -moz-linear-gradient(left, rgba(169, 185, 217, 0.8) 0%, rgba(63, 96, 168, 0.8) 100%), url("img/casa1.jpg");
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(169, 185, 217, 0.8)), color-stop(100%, rgba(63, 96, 168, 0.8))), url("img/casa1.jpg");
+    background: -webkit-linear-gradient(left, rgba(169, 185, 217, 0.8) 0%, rgba(63, 96, 168, 0.8) 100%), url("img/casa1.jpg");
+    background: -o-linear-gradient(left, rgba(169, 185, 217, 0.8) 0%, rgba(63, 96, 168, 0.8) 100%), url("img/casa1.jpg");
+    background: -ms-linear-gradient(left, rgba(169, 185, 217, 0.8) 0%, rgba(63, 96, 168, 0.8) 100%), url("img/casa1.jpg");
+    background: linear-gradient(to right, rgba(169, 185, 217, 0.8) 0%, rgba(63, 96, 168, 0.8) 100%), url("img/casa1.jpg");
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9b9d9', endColorstr='#3f60a8', GradientType=1);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 100%);
+}
+
+.textos-header {
+    color: white;
+    background: hsla(0, 0%, 0%, 0.363);
+    position: relative;
+    top: 60px;
+    left: 60px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+.textos-header h1 {
+    font-size: 60px;
+}
+
+/*seccion uno*/
+
+.seccionuno {
+    position: relative;
+    top: -150px;
+    background: whitesmoke;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    border-radius: 2px;
+    padding: 30px;
+    -webkit-box-shadow: -1px 17px 33px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 17px 33px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 17px 33px -12px rgba(0, 0, 0, 0.75);
+}
+
+.seccionuno h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    border: none;
+    border-bottom: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.textoSeccionUno {
+    display: flex;
+    align-items: center;
+    width: 850px;
+}
+
+.textoSeccionUno p {
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.textoSeccionUno img {
+    position: relative;
+    width: 400px;
+    height: auto;
+    -webkit-box-shadow: -1px 17px 33px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 17px 33px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 17px 33px -12px rgba(0, 0, 0, 0.75);
+}
+
+/*seccion dos*/
+
+.figurasecdos {
+    position: absolute;
+    background: var(--colorBase);
+    -webkit-clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+    clip-path: polygon(0 0, 100% 30%, 100% 70%, 0 100%);
+    padding: 200px 0;
+    height: auto;
+}
+
+.secciondos {
+    position: relative;
+    background: url(img/casa3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    margin: auto;
+    height: 500px;
+}
+
+.equi {
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+}
+
+.equi h1 {
+    position: absolute;
+    color: white;
+    bottom: 35%;
+    left: calc(-100%);
+    font-size: 90px;
+    transform: rotate(-90deg);
+}
+
+.especificaciones {
+    background: whitesmoke;
+    width: 250px;
+    height: 100%;
+    padding: 30px 10px;
+    -webkit-box-shadow: -1px 17px 33px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 17px 33px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 17px 33px -12px rgba(0, 0, 0, 0.75);
+}
+
+.especificaciones h2 {
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.item img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.content {
+    width: 1100px;
+    position: relative;
+    left: calc(-10%);
+    top: calc(15%);
+}
+
+/*seccion tres*/
+.secciontres{
+    position: relative;
+    margin: 90px auto;
+    max-width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.column{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.lines{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.c p{
+    width: 100%;
+    text-align: right;
+}
+.part{
+    display: flex;
+    align-items: center;
+    height: 33.33%;
+}
+
+/*footer*/
+.footer{
+    position: relative;
+    background: black;
+}
+.efectoLine{
+    position: absolute;
+    background: black;
+    height: 150px;
+    width: 100%;
+    top: -140px;
+    z-index: -1;
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 70%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.icono{
+    position: relative;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.icono img{
+    width: 300px;
+}
+.icono:after{
+    content:"";
+    position: absolute;
+    background: white;
+    width: 80%;
+    height: 1px;
+    bottom: 0;
+}
+.seccionenlaces{
+    padding: 30px;
+}
+.enlaces{
+    display: flex;
+    color: white;
+    max-width: 1200px;
+    height: 200px;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.enlace{
+    display: flex;
+    flex-direction: column;
+}
+
+.enlaces a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.enlaces a:hover{
+    color: gray;
+}
