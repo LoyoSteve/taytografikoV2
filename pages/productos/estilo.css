@@ -488,7 +488,7 @@ article {
 /*articulo 3 Papeleria---------------------------------------------------------- Papeleria*/
 
 .art3 {
-    background: url(../img/qwe.jpg);
+    background: url(img/qwe.jpg);
     background-size: cover;
 }
 
@@ -944,6 +944,7 @@ article {
 /*articulo 6 -----------------------------------------------------------------*/
 .art6{
     background: linear-gradient(to right, #EB5757,#000000);
+    background: -moz-linear-gradient(to right, #EB5757,#000000);
 }
 .art6-info{
     position: absolute;
@@ -1005,16 +1006,67 @@ article {
     -moz-box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 13px 36px -13px rgba(0, 0, 0, 0.75);
 }
-.art6-pagesType-descrip{
+.art6-pagesType-descrip, .art6-pagesType-descrip2{
     position: absolute;
-    width: 40%;
-    top: 0;
+    width: 35%;
     right: 0;
     padding: 3%;
     border-radius: 8px;
     background: whitesmoke;
+    font-size: .9em;
+}
+.art6-pagesType-descrip{
+    top:10%;
+}
+.art6-pagesType-descrip2{
+    bottom: 10%;
+}
+/*Articulo 7------------------------------------------------------------*/
+.art7-circulo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 60%;
+}
+.art7-circulo circle{
+    fill: #35a86e;
+    cx:90%;
+    cy:-10%;
+    r:100%;
 }
 
+.art7-gallery{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.art7-gallery img{
+    width:30%;
+    height: 30%;
+    object-fit: cover;
+    margin: 1%;
+    transition: 0.5s;
+}
+.art7-gallery img:nth-child(1){
+    width: 40%;
+}
+.art7-gallery img:hover{
+    transition: 0.5s;
+    width:50%;
+    height:40%;
+}
+/*contenido*/
+.art7-info{
+    position: absolute;
+    top:10%;
+    right: 5%;
+    width: 40%;
+}
 /*Redes sociales*/
 
 .redes {

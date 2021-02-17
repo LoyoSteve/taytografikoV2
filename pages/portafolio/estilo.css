@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+@font-face {
+    font-family: "LeagueSpartan-Bold";
+    src: url(../font/LeagueSpartan-Bold.otf);
+}
+
+:root {
+    --fontLeague: "LeagueSpartan-Bold";
+    --colorFontTitulo: #FFDE59;
+    --colorSecundary: #7788E4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';
+}
+
+body {
+    background: #03174D;
+    color: whitesmoke;
+}
+
+img, svg {
+    position: relative;
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--fontLeague);
+}
+/*decoraciones*/
+.decoracion-cruces{
+    color: white;
+    font-family: var(--fontLeague);
+    font-size: 4em;
+}
+.decoracion-cruces div{
+    position: absolute;
+    animation: decoracion-crucesAnim 8s linear infinite;
+    z-index: 200;
+}
+@keyframes decoracion-crucesAnim{
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.decoracion-cruces div:nth-child(1){
+    top: 24%;
+    left: 85%;
+}
+.decoracion-cruces div:nth-child(2){
+    top: 60%;
+    left: 15%;
+}
+.decoracion-cruces div:nth-child(3){
+    top: 7%;
+    left: 33%;
+}
+/*menu*/
+
+.head-icon-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.head-menu {
+    width: 8%;
+}
+
+.head-icon {
+    width: 5%;
+    cursor: pointer;
+}
+/*menu de navegacion*/
+
+.head-icon-menu-desplegado{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    display: none;
+    padding: 5%;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.842);
+    z-index: 500;
+}
+.head-icon-menu-desplegado a, .head-icon-menu-desplegado button{
+    color: white;
+    text-decoration: none;
+    font-family: var(--fontLeague);
+    font-size: 3em;
+    border: none;
+    text-align: center;
+    background: transparent;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.head-icon-menu-desplegado a:hover{
+    background: rgba(255, 255, 255, 0.322);
+}
+.head-icon-menu-desplegado button{
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+.head-icon-menu-desplegado button:focus{
+    outline: none;
+}
+
+/*Presentacion*/
+
+.head-presentation {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    padding: 5%;
+    border: solid whitesmoke 1px;
+}
+
+.head-presentation h1 {
+    width: 25%;
+    font-size: 4em;
+}
+
+.head-presentation p {
+    font-size: 1.5em;
+}
+
+.head-pre-image {
+    position: absolute;
+    right: 0%;
+    bottom: -1%;
+    width: 40%;
+    transform: rotateY(180deg);
+}
+
+/*seccion 1- que es tayto ---------------------*/
+
+.sec1 {
+    position: relative;
+    background: var(--colorSecundary);
+    display: flex;
+    padding: 12% 8%;
+}
+.sec1-wave{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    opacity: 40%;
+    z-index: 1;
+}
+
+.sec1 p {
+    width: 45%;
+    margin-left: 15%;
+    font-size: 1.3em;
+    z-index: 100;
+}
+
+.sec1-imagenes {
+    position: absolute;
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    top: 5%;
+    left: 58%;
+    z-index: 100;
+}
+
+.sec1-imagenes img {
+    position: absolute;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    max-width: 180px;
+    max-height: 180px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.sec1-imagenes img:nth-child(2) {
+    left: 35%;
+    top: 25%;
+}
+
+.sec1-imagenes img:nth-child(3) {
+    bottom: 5%;
+}
+
+/*seccion2 team-----------------------------------*/
+.crucedos div:nth-child(2){
+    top: 70%;
+    left: 12%;
+}
+.crucedos div:nth-child(3){
+    top: 10%;
+    left: 40%;
+}
+.crucedos div:nth-child(4){
+    top: 70%;
+    left: 90%;
+}
+.sec2 {
+    position: relative;
+    display: flex;
+}
+
+.sec2 h1 {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    font-size: 3.5em;
+}
+
+/*contenedor de perfiles*/
+
+.sec2-bgPhoto {
+    position: relative;
+    width: 50%;
+}
+
+.sec2-bgPhoto-backg {
+    background: white;
+}
+
+.sec2-bgPhoto-backg img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px) brightness(80%);
+    object-fit: cover;
+    z-index: -1;
+}
+
+.sec2-bgPhoto-galery {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    padding: 3%;
+}
+
+.sec2-bgPhoto-galery img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .5s;
+}
+.sec2-bgPhoto-galery img:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.sec2-bgPhoto-galery button {
+    border: none;
+    background: rgb(0, 0, 0, 0);
+}
+
+.sec2-bgPhoto-galery button:focus {
+    outline: none;
+}
+
+/*perfil foto*/
+
+.sec2-bgPhoto-perfil {
+    position: relative;
+    display: flex;
+    padding: 15% 5%;
+}
+
+.sec2-bgPhoto-perfil img:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    border: solid rgb(156, 156, 156) 4px;
+}
+
+.sec2-descrip-imgProfe {
+    position: absolute;
+    display: flex;
+    left: 55%;
+    bottom: 15%;
+}
+
+.sec2-descrip-imgProfe img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sec2-bgPhoto-perfil-cir {
+    position: absolute;
+    top: 1.5%;
+    left: 13%;
+    width: 75%;
+    animation: sec2-stroke-circle 10s linear infinite forwards;
+}
+
+.sec2-bgPhoto-perfil-cir circle {
+    cx: 50%;
+    cy: 50%;
+    r: 90;
+    stroke-dasharray: 141;
+}
+
+@keyframes sec2-stroke-circle {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+/*contenedor de informacion del perfil*/
+
+.sec2-descripcion {
+    width: 50%;
+    padding: 13% 5%;
+}
+
+.sec2-descripcion-info h1 {
+    position: relative;
+    font-size: 2em;
+    left: 0;
+}
+
+.sec2-descripcion-info h3 {
+    font-family: var(--fontLeague);
+    text-align: left;
+}
+
+.sec2-descripcion-redes {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.sec2-descripcion-redes a {
+    width: 20%;
+}
+
+/*seccion de la wave para transicion*/
+.secwave{
+    position: relative;
+    height: 250px;
+}
+.secwave svg{
+    position: absolute;
+    bottom: 0;
+}
+/*seccion trabajos*/
+.sec3 {
+    position: relative;
+    overflow: hidden;
+    background: var(--colorSecundary);
+}
+
+/*imagenes*/
+
+.sec3-clouds .sec3-cloud {
+    fill: white;
+    position: absolute;
+    width: 15%;
+    left: 100%;
+}
+
+.sec3-clouds .sec3-cloud:nth-child(1) {
+    top: 18%;
+    animation: sec3-cloud linear 80s infinite 30s;
+}
+
+.sec3-clouds .sec3-cloud:nth-child(2) {
+    top: 40%;
+    animation: sec3-cloud linear 80s infinite;
+}
+
+.sec3-clouds .sec3-cloud:nth-child(3) {
+    top: 45%;
+    animation: sec3-cloud linear 80s infinite 15s;
+}
+
+@keyframes sec3-cloud {
+    to {
+        left: -14%;
+    }
+}
+
+/*contenido*/
+
+.sec3 h1 {
+    text-align: center;
+    font-size: 3.5em;
+    padding: 2%;
+}
+
+/*search*/
+
+.sec3-search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    align-items: center;
+    margin: auto;
+}
+
+.sec3-search input {
+    width: 100%;
+    padding: 1%;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+.sec3-search input:focus {
+    outline: none;
+}
+
+.sec3-search a {
+    fill: black;
+    background: white;
+    display: flex;
+    align-items: center;
+    width: 5%;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+    transition: .5s;
+}
+
+.sec3-search a:hover {
+    fill: rgb(255, 255, 255);
+    background: rgb(255, 136, 0);
+    transition: .5s;
+}
+
+/*galeria de trabajos*/
+.crucetres div:nth-child(1){
+    top: 10%;
+    left: 2%;
+}
+.crucetres div:nth-child(2){
+    top: 50%;
+    left: 50%;
+}
+.crucetres div:nth-child(3){
+    top: 20%;
+    left: 90%;
+}
+.crucetres div:nth-child(4){
+    top: 65%;
+    left: 5%;
+}
+.sec3-galery {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 4%;
+}
+
+.sec3-galery-item {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 1%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.sec3-galery-item-des {
+    position: absolute;
+    top: 0;
+    right: -70%;
+    height: 100%;
+    width: 70%;
+    padding: 8%;
+    background: rgba(0, 0, 0, 0.823);
+    transition: 1s;
+}
+
+.sec3-galery-item:hover .sec3-galery-item-des {
+    right: 0;
+    transition: 1s;
+}
+
+.sec3-galery-item:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.sec3-galery-item-des h3 {
+    font-family: var(--fontLeague);
+}
+
+.sec3-galery-item-des p {
+    font-style: italic;
+}
+
+/*mostrar trabajos*/
+
+.sec3-galery-wininfo {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    align-items: center;
+    background: black;
+    z-index: 200;
+}
+
+.sec3-galery-wininfo-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 1%;
+}
+
+.sec3-galery-wininfo-imagenes {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec3-galery-wininfo-imagenes button {
+    position: absolute;
+    width: 10%;
+    background: rgba(255, 0, 0, 0);
+    border: none;
+    transition: .2s;
+}
+.sec3-galery-wininfo-imagenes button:focus {
+    outline: none;
+}
+
+.sec3-galery-wininfo-imagenes button:hover {
+    background: rgba(163, 163, 163, 0.795);
+    transition: .2s;
+}
+
+.sec3-galery-wininfo-imagenes button:nth-child(1) {
+    top: 40%;
+    left: 0;
+}
+
+.sec3-galery-wininfo-imagenes button:nth-child(2) {
+    top: 40%;
+    right: 0;
+}
+
+.sec3-galery-wininfo-img-arrowl, .sec3-galery-wininfo-img-arrowr {
+    fill: white;
+}
+
+.sec3-galery-wininfo-img-arrowr {
+    transform: rotateY(180deg);
+}
+
+.sec3-galery-wininfo-descrip {
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+    text-align: justify;
+    overflow: auto;
+}
+
+.sec3-galery-wininfo-descrip h1 {
+    font-size: 2em;
+    text-align: left;
+    padding: 0;
+}
+
+/*arboles decoracion*/
+
+.sec3-arboles {
+    position: relative;
+    height: 400px;
+}
+
+.sec3-arboles-img {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 90%;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+}
+
+.sec3-arboles-img img {
+    width: 13%;
+}
+
+.sec3-arboles-pasto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: #00C4A3;
+}

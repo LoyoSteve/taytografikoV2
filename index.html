@@ -16,6 +16,9 @@
     <div id="scroll" class="container">
         <header id="cabecera" class="cabecera">
             <img class="arbol1" id="arbol1" src="principal/img/arbol1.png">
+            <div id="cabecera-menuPaginaCompleta" class="cabecera-menuPaginaCompleta">
+                
+            </div>
             <nav class="menu" style="display: none;">
                 <ul>
                     <il><a href="#">Inicio</a></il>
@@ -228,7 +231,8 @@
                 <a id="mv4" href="#"><img src="principal/img/pluma.png" alt=""></a>
             </div>
 
-            <model-viewer id="modelViewer" class="sec3-model-viewer" src="principal/prod/taza.glb" auto-rotate camera-controls>
+            <model-viewer id="modelViewer" class="sec3-model-viewer" src="principal/prod/taza.glb" auto-rotate
+                camera-controls>
             </model-viewer>
 
             <svg class="sec3-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -254,7 +258,7 @@
                     forma de trabajo, si quieres conocer mas sobre nosotros, nuestros trabajos y también nuestra forma
                     de trabajar haz clic aquí.</p>
                 <div>
-                    <a href="#">Conocer mas</a>
+                    <a href="pages/portafolio/porta.html">Conocer mas</a>
                 </div>
             </div>
 
@@ -497,7 +501,7 @@
                     <textarea type="text" name="mensaje" required></textarea>
                     <label class="labeltextarea">Mensaje*</label>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LcebekZAAAAADFH85WX-iCfbiemwJBBGEsgN9tL"  required></div>
+                <div class="g-recaptcha" data-sitekey="6LcebekZAAAAADFH85WX-iCfbiemwJBBGEsgN9tL" required></div>
 
                 <button type="submit" class="estilo-boton">Enviar</button>
                 </from>
@@ -505,21 +509,19 @@
         </section>
 
         <nav class="redes">
-            <a href="https://www.facebook.com/TAYTO-Gráfiko-110292403832598" target="blank"><img src="principal/img/fb.png" alt=""></a>
+            <a href="https://www.facebook.com/TAYTO-Gráfiko-110292403832598" target="blank"><img
+                    src="principal/img/fb.png" alt=""></a>
             <a href="#"><img src="principal/img/ins.png" alt=""></a>
             <a href="#"><img src="principal/img/wha.png" alt=""></a>
         </nav>
     </div>
 
 </body>
-<script>
-    document.body.onload = () =>{
-        document.body.style.display = 'block';
-    }
-</script>
 <script src="principal/js/scroll.js"></script>
 <script src="principal/js/movimiento.js"></script>
 <script src="principal/js/model-viewer.js"></script>
+<script src="principal/js/menu.js"></script>
+<script src="/principal/js/cargarPaginaActual.js"></script>
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
