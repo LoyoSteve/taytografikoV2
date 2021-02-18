@@ -80,8 +80,28 @@ var menuBar = document.getElementById('head-icon-bars'),
 menuBar.onclick = (e) =>{
     e.preventDefault();
     menu.style.display = 'flex';
+    menu.animate([
+        //keyframes
+        {transform:"translate(600px)"},
+        {transform:"translate(0px)"}
+    ],{
+        duration: 1000,
+        iterations:1,
+        fill:"forwards",
+        easing: "ease"
+    });
 }
 
-menuBarClose.onclick = () =>{
-    menu.style.display = 'none';
+menuBarClose.onclick = (e) =>{
+    e.preventDefault();
+    menu.animate([
+        //keyframes
+        {transform:"translate(0px)"},
+        {transform:"translate(600px)"}
+    ],{
+        duration: 1000,
+        iterations:1,
+        fill: "forwards",
+        easing: "ease"
+    });
 }
