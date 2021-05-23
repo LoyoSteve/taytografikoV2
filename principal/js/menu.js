@@ -10,8 +10,8 @@ contentCargar.innerHTML = `<div id="head-icon-bars" class="head-icon">
 <menu id="head-icon-menu-desplegado" class="head-icon-menu-desplegado">
 <button id="head-icon-menu-desplegado-close" href="#">x</button>
 <a href="/index.html">Inicio</a>
-<a href="/pages/productos/Productos.html">Productos</a>
-<a href="/pages/portafolio/porta.html">Portafolio</a>
+<a href="./pages/productos/Productos.html">Productos</a>
+<a href="./pages/portafolio/porta.html">Portafolio</a>
 </menu>
 <style>
 .cabecera-menuPaginaCompleta{
