@@ -12,8 +12,6 @@ contentCargar.innerHTML = `<div id="head-icon-bars" class="head-icon">
 <a href="/index.html">Inicio</a>
 <a href="/pages/productos/Productos.html">Productos</a>
 <a href="/pages/portafolio/porta.html">Portafolio</a>
-<a href="#">Galeria</a>
-<a href="#">Contacto</a>
 </menu>
 <style>
 .cabecera-menuPaginaCompleta{

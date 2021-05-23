@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+@font-face {
+    font-family: "LeagueSpartan-Bold";
+    src: url(../font/LeagueSpartan-Bold.otf);
+}
+
+:root {
+    --fontLeague: "LeagueSpartan-Bold";
+    --colorFontTitulo: #FFDE59;
+    --colorSecundary: #7788E4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontLeague);
+    color: white;
+}
+
+body{
+    background: #141414;
+}
+
+/*fondo*/
+#particles-js{
+    height: 100vh;
+}
+/*presentacion*/
+.sec1{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.sec1-texto{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-size: 2.5em;
+}
+.sec1-texto h1:nth-child(2){
+    position: relative;
+    left: 40%;
+}
+.sec1-texto h3{
+    text-align: center;
+    font-size: .5em;
+}
+.sec1-texto-inicio{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .4em;
+    font-style: italic;
+}
+
+.sec1-texto-inicio svg{
+    position: relative;
+    width: 15%;
+    animation: sec1-text-inicio-arrow 1s ease-out infinite;
+}
+@keyframes sec1-text-inicio-arrow{
+    0%{top: 0px;}
+    50%{top: 10px;}
+    100%{top: 0px;}
+}
+/*seccion 2*/
+/*imagen-trabajo*/
+.sec2-gallery-item{
+    position: absolute;
+    max-width: 900px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    left: 15%;
+}
+.sec2-gallery-item-container-bg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.sec2-gallery-item-title{
+    position: absolute;
+    top: 5%;
+    left: -5%;
+    padding: 3%;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+    background: rgb(255, 255,255, 0.1);
+    border-top: 1px solid rgba(192, 190, 190, 0.5);
+    border-left: 1px solid rgba(192, 190, 190, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.sec2-gallery-item-actions{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 98%;
+}
+.sec2-gallery-item-actions svg{
+    background: rgb(255, 255, 255);
+    width: 40px;
+    border-radius: 50%;
+    padding: 20%;
+}
+/*toolltip*/
+.sec2-gallery-item-actions a{
+    text-decoration: none;
+}
+.sec2-gallery-item-actions a .title{
+    position: absolute;
+    color: rgb(53, 53, 53);
+    background: whitesmoke;
+    transform: translateX(10px) translateY(0px);
+    border-radius: 10PX;
+    padding: 20%;
+    font-size: .9em;
+    visibility: hidden;
+    opacity: 0;
+}
+.sec2-gallery-item-actions a .title::before{
+    position: absolute;
+    content: "";
+    background: whitesmoke;
+    left: -5%;
+    top:35%;
+    width: 10px;
+    height: 10px;
+    transform: rotateZ(45deg);
+}
+.sec2-gallery-item-actions a:hover .title{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(20px) translateY(0px);
+    transition: .5s;
+}
+
+/*informacion del item de la galeria*/
+.sec2-gallery-item-info{
+    display: none;
+    position: fixed;
+    background: rgba(20, 20, 20, 0.678);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sec2-gallery-item-info .info{
+    position: relative;
+    padding: 5%;
+    width: 100%;
+    text-align: justify;
+    overflow: auto;
+}
+.sec2-gallery-item-info .info h1{
+    font-size: 3em;
+}
+.sec2-gallery-item-info .info button{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    text-decoration: none;
+    font-size: 2em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+/*imagenes informacion*/
+.sec2-gallery-item-info .imagenes{
+    position: relative;
+    width: 100%;
+}
+
+.sec2-gallery-item-info .imagenes .sec2-img-arrowl, .sec2-img-arrowr{
+    fill: white;
+    top: 40%;
+    position: absolute;
+    width: 10%;
+    background: rgba(0, 0, 0, 0.767);
+}
+.sec2-img-arrowr{
+    right: 0;
+    transform: rotateY(180deg);
+}
+.sec2-gallery-item-info .imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

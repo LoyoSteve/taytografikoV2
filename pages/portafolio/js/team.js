@@ -70,7 +70,9 @@ var cir = document.getElementById('sec2-bgPhoto-perfil-cir'),
 function photoPerfil(num) {
     cir.animate([
         //keyframes
-        { transform: 'rotateZ(-360deg)' }
+        { transform: 'rotateZ(-360deg)',
+        opacity:'0'},
+        {opacity:'1'}
     ], {
         // timing options
         duration: 500,

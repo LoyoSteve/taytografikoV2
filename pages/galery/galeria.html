@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayto grafiko</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div id="cabecera-menuPaginaCompleta" class="cabecera-menuPaginaCompleta">
+
+    </div>
+    <div id="particles-js">
+        <!--Presentacion-->
+        <section id="sec1" class="sec1">
+            <div class="sec1-texto">
+                <h1>Tayto</h1>
+                <h1>Grafiko</h1>
+                <h3>Galería</h3><br><br>
+
+                <div class="sec1-texto-inicio">
+                    <svg viewBox="0 0 24 24" style="fill:rgb(255, 255, 255);"><path d="M16.939 7.939L12 12.879 7.061 7.939 4.939 10.061 12 17.121 19.061 10.061z"></path></svg>
+                    <a id="sec1-vergallery" href="#">ver galería</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Galeria-->
+        <section id="sec2" class="sec2" style="display: none;">
+            <div id="sec2-gallery-item" class="sec2-gallery-item">
+                
+            </div>
+            
+            <div id="sec2-gallery-item-info" class="sec2-gallery-item-info">
+                <div class="info">
+                    <button id="sec2-gallery-item-info-close" onclick="closeWinfo()">X</button>
+                    <h1>Titulo 1</h1>
+                    <h4>12-12-13</h4><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos deserunt quisquam minima ipsam optio, autem necessitatibus ab debitis facilis ad, maiores at? At excepturi deserunt delectus similique obcaecati ab consequuntur.</p><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos deserunt quisquam minima ipsam optio, autem necessitatibus ab debitis facilis ad, maiores at? At excepturi deserunt delectus similique obcaecati ab consequuntur.</p>
+                </div>
+                <div class="imagenes">
+                    <a id="sec2-img-arrowl" href="#"><svg class="sec2-img-arrowl" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path d="M13.293 6.293L7.586 12 13.293 17.707 14.707 16.293 10.414 12 14.707 7.707z"></path></a>
+                    <a id="sec2-img-arrowr" href="#"><svg class="sec2-img-arrowr" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path d="M13.293 6.293L7.586 12 13.293 17.707 14.707 16.293 10.414 12 14.707 7.707z"></path></a>
+                    <img src="img/trabajos/t1/t1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="sec3" class="sec3" style="display: none;">
+            
+        </section>
+    </div>
+
+    <!--particulas-->
+    <script src="js/particles.js"></script>
+    <!--acciones de galeria-->
+    <script src="js/galeria.js"></script>
+    <!--menu y carga de la pagina-->
+    <script src="/principal/js/menu.js"></script>
+    <script src="/principal/js/cargarPaginaActual.js"></script>
+</body>
+
+</html>
